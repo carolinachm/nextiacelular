@@ -1,0 +1,17 @@
+###
+POST http://localhost:8080/api/usuario
+Content-Type: application/json
+
+{
+  "email": "teste@teste.com.br",
+  "senha": "123456",
+  "tipoCadastro": "ativo",
+  "pessoaModelo": {
+    "nome": "Teste",
+    "cpf": "00000",
+    "sexo": "",
+    "dataNascimento": "",
+    "telefone": "",
+    "celular": ""
+  }
+}

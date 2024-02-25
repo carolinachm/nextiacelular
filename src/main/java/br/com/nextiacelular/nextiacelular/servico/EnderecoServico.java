@@ -22,7 +22,7 @@ public class EnderecoServico {
     //Metodo para cadastrar endereço
     public ResponseEntity<?>  cadastrarEndereco(EnderecoModelo enderecoModelo){
         
-        if(enderecoModelo.getCep() == 0){
+        if(enderecoModelo.getCep() == ""){
             mensagem.setMensagem("O campo cep é obrigatorio");
             return new ResponseEntity<>(mensagem, HttpStatus.BAD_REQUEST);
         }else{
@@ -46,9 +46,9 @@ public class EnderecoServico {
     public ResponseEntity<?>  editarEndereco(EnderecoModelo enderecoModelo){
         if(enderecoRepositorio.countByCodigo(enderecoModelo.getCodigo()) == 0){
             mensagem.setMensagem("O codigo infomrado não existe");
-            return new ResponseEntity<>(mensagem, HttpStatus.NOT_FOUND)
+            return new ResponseEntity<>(mensagem, HttpStatus.NOT_FOUND);
 
-        }else if(enderecoModelo.getCep() == 0){
+        }else if(enderecoModelo.getCep() == ""){
             mensagem.setMensagem("O campo cep é obrigatorio");
             return new ResponseEntity<>(mensagem, HttpStatus.BAD_REQUEST);
         }else{

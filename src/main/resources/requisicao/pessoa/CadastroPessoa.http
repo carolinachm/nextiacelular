@@ -1,0 +1,12 @@
+###
+POST http://localhost:8080/api/pessoa
+Content-Type: application/json
+
+{
+  "nome": "Teste",
+  "cpf": "00000",
+  "sexo": "",
+  "dataNascimento": "",
+  "telefone": "",
+  "celular": ""
+}

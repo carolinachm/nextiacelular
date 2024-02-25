@@ -1,0 +1,9 @@
+###
+POST http://localhost:8080/api/marca
+Content-Type: application/json
+
+{
+  "descricao": "teste de cadastra marca",
+  "status": true
+}
+

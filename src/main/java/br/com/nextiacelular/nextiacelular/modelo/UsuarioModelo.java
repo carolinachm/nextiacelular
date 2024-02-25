@@ -1,10 +1,6 @@
 package br.com.nextiacelular.nextiacelular.modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -18,5 +14,8 @@ public class UsuarioModelo {
     private String tipoCadastro;
     private String email;
     private String senha;
+    @OneToOne
+    @JoinColumn(name = "codigo_pessoa", referencedColumnName = "codigo")
+    private PessoaModelo pessoaModelo;
     
 }

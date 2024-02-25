@@ -1,0 +1,9 @@
+###
+PUT http://localhost:8080/api/marca
+Content-Type: application/json
+
+{
+  "codigo": 4,
+  "descricao": "teste de atualização da marca",
+  "status": false
+}

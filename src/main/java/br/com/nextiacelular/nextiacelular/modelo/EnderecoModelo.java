@@ -18,9 +18,9 @@ public class EnderecoModelo {
     private String cep;
     private String logradouro;
     private String bairro;
-    private String cidade;
-    private String estado;
+    private String localidade;
+    private String uf;
+   
 
-    // getters e setters
 }
 
