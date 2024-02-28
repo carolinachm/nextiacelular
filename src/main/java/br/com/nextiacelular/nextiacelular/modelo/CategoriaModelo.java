@@ -1,10 +1,7 @@
 package br.com.nextiacelular.nextiacelular.modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import br.com.nextiacelular.nextiacelular.enumerador.StatusEnumerador;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -16,5 +13,7 @@ public class CategoriaModelo {
      @GeneratedValue(strategy = GenerationType.AUTO)
      private Long codigo;
      private String descricao;
-     private Boolean status;
+     @Enumerated(EnumType.STRING)
+     private StatusEnumerador status;
+
 }

@@ -1,0 +1,19 @@
+###
+PUT http://localhost:8080/api/usuario
+Content-Type: application/json
+
+{
+  "codigo": 1,
+  "tipoCadastro": "ativo atualizado",
+  "email": "teste@teste.com.br",
+  "senha": "123456",
+  "pessoaModelo": {
+    "codigo": 1,
+    "nome": "Teste de autlização",
+    "cpf": "13521089096",
+    "celular": "(68) 3558-2323",
+    "telefone": "(68) 3558-2323",
+    "sexo": "feminino",
+    "dataNascimento": "1984-06-03T00:00:00.000+00:00"
+  }
+}

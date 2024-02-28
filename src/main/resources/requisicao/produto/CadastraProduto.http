@@ -1,0 +1,23 @@
+###
+POST http://localhost:8080/api/produto
+Content-Type: application/json
+
+{
+  "nome":"Produto teste",
+  "descricaoProduto": "",
+  "valor": 1000,
+  "marcaModeloList":[
+    {
+      "codigo": 1,
+      "descricao": "teste de cadastra marca",
+      "status": "ATIVO"
+    }
+    ],
+  "categoriaModelo":{
+    "codigo": 1,
+    "descricao": "cadastro categoria",
+    "status": "ATIVO"
+  },
+  "quantidade":"",
+  "status":"ATIVO"
+}

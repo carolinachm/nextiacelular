@@ -1,7 +1,12 @@
 package br.com.nextiacelular.nextiacelular.modelo;
 
+import br.com.nextiacelular.nextiacelular.enumerador.StatusEnumerador;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -11,11 +16,15 @@ public class UsuarioModelo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long codigo;
-    private String tipoCadastro;
-    private String email;
+    private String nome;
+    private String login;
     private String senha;
-    @OneToOne
-    @JoinColumn(name = "codigo_pessoa", referencedColumnName = "codigo")
-    private PessoaModelo pessoaModelo;
-    
+    private String confirmaSenha;
+    private String email;
+    @Enumerated(EnumType.STRING)
+    private StatusEnumerador statusEnumerador;
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    private Date cadastro;
+    private String papel;
+
 }

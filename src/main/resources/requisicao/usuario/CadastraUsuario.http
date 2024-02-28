@@ -7,11 +7,32 @@ Content-Type: application/json
   "senha": "123456",
   "tipoCadastro": "ativo",
   "pessoaModelo": {
+    "codigo": 3,
     "nome": "Teste",
     "cpf": "00000",
-    "sexo": "",
-    "dataNascimento": "",
+    "celular": "",
     "telefone": "",
-    "celular": ""
-  }
+    "sexo": "",
+    "dataNascimento": ""
+  },
+  "pedidoModeloList": [
+    {
+      "codigo": 1,
+      "numeroPedido": 1,
+      "dataPedido": "2024-02-28T00:00:00.000+00:00",
+      "horaPedido": null,
+      "valorPedido": 1500,
+      "statusEnumerador": "ATIVO",
+      "enderecoModeloList": [
+        {
+          "codigo": 1,
+          "cep": "01001-000",
+          "logradouro": "Praça da Sé",
+          "bairro": "Sé",
+          "localidade": "São Paulo",
+          "uf": "SP"
+        }
+      ]
+    }
+  ]
 }

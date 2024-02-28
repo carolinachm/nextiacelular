@@ -25,6 +25,9 @@ public class PessoaServico {
         }else if(pessoaModelo.getCpf().equals("")){
             mensagem.setMensagem("O campo cpf é obrigatório");
             return new ResponseEntity<>(mensagem, HttpStatus.BAD_REQUEST);
+        }else if(pessoaModelo.getEnderecoModeloList().equals("")){
+            mensagem.setMensagem("O campo endereço é obrigátorio");
+            return new ResponseEntity<>(mensagem, HttpStatus.BAD_REQUEST);
         }else{
             return new ResponseEntity<>(pessoaRepositorio.save(pessoaModelo), HttpStatus.CREATED);
         }
@@ -56,6 +59,9 @@ public class PessoaServico {
             return new ResponseEntity<>(mensagem, HttpStatus.BAD_REQUEST);
         }else if(pessoaModelo.getCpf().equals("")){
             mensagem.setMensagem("O campo cpf é obrigatório");
+            return new ResponseEntity<>(mensagem, HttpStatus.BAD_REQUEST);
+        }else if(pessoaModelo.getEnderecoModeloList().equals("")){
+            mensagem.setMensagem("O campo endereço é obrigátorio");
             return new ResponseEntity<>(mensagem, HttpStatus.BAD_REQUEST);
         }else{
             return new ResponseEntity<>(pessoaRepositorio.save(pessoaModelo), HttpStatus.OK);

@@ -1,0 +1,21 @@
+###
+POST http://localhost:8080/api/pedido
+Content-Type: application/json
+
+{
+  "numeroPedido": 1,
+  "dataPedido": "2024-02-28",
+  "horaPedido": "",
+  "valorPedido": 1500,
+  "statusEnumerador": "ATIVO",
+  "enderecoModeloList":[
+  {
+    "codigo": 1,
+    "cep": "01001-000",
+    "logradouro": "Praça da Sé",
+    "bairro": "Sé",
+    "localidade": "São Paulo",
+    "uf": "SP"
+  }
+]
+}

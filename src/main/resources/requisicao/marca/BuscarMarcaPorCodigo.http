@@ -1,3 +1,3 @@
 ###
-GET http://localhost:8080/api/marca/4
+GET http://localhost:8080/api/marca/3
 Content-Type: application/json

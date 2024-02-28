@@ -8,5 +8,15 @@ Content-Type: application/json
   "sexo": "",
   "dataNascimento": "",
   "telefone": "",
-  "celular": ""
+  "celular": "",
+  "enderecoModeloList": [
+    {
+      "codigo": 1,
+      "cep": "01001-000",
+      "logradouro": "Praça da Sé",
+      "bairro": "Sé",
+      "localidade": "São Paulo",
+      "uf": "SP"
+    }
+  ]
 }
