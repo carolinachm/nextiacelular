@@ -3,8 +3,8 @@ POST http://localhost:8080/api/endereco
 Content-Type: application/json
 
 {
-  "cep": "01001-000",
-  "logradouro": "Praça da Sé",
+  "cep": "25550-644",
+  "logradouro": "Rua Quati",
   "complemento": "lado ímpar",
   "bairro": "Sé",
   "localidade": "São Paulo",

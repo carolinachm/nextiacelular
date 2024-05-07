@@ -1,0 +1,12 @@
+###
+PUT http://localhost:8080/api/cliente
+Content-Type: application/json
+
+{
+  "id": 10,
+  "nome": "Teste de autlização",
+  "cpf": "13521089096",
+  "telefone": "(68) 3558-2323",
+  "email": ""
+
+}

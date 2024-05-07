@@ -1,0 +1,10 @@
+###
+POST http://localhost:8080/api/cliente
+Content-Type: application/json
+
+{
+  "nome": "nome",
+  "cpf": "11111111111",
+  "telefone": "111111",
+  "email": ""
+ }
