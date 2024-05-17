@@ -1,5 +1,6 @@
 package br.com.nextiacelular.nextiacelular.model;
 
+import br.com.nextiacelular.nextiacelular.enumerador.TipoEndereco;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -18,4 +19,6 @@ public class EnderecoModel {
     private String cidade;
     private String uf;
     private String localizacao;
+    @Enumerated(EnumType.STRING)
+    private TipoEndereco tipoEndereco;
 }
