@@ -10,6 +10,7 @@ import br.com.nextiacelular.model.EstoqueModel;
 @Repository
 public interface EstoqueRepository extends CrudRepository<EstoqueModel, Long>{
     
+    @SuppressWarnings("null")
     List<EstoqueModel> findAll();
     EstoqueModel findById(long id);
     Long countById(long id);

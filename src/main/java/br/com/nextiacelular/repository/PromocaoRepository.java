@@ -10,6 +10,7 @@ import br.com.nextiacelular.model.PromocaoModel;
 @Repository
 public interface PromocaoRepository extends CrudRepository<PromocaoModel, Long>{
     
+    @SuppressWarnings("null")
     List<PromocaoModel> findAll();
     PromocaoModel findById(long id);
     Long countById(long id);

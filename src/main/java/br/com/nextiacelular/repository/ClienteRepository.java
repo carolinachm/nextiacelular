@@ -8,6 +8,8 @@ import java.util.List;
 
 @Repository
 public interface ClienteRepository extends CrudRepository<ClienteModel, Long> {
+    
+    @SuppressWarnings("null")
     List<ClienteModel> findAll();
     ClienteModel findById(long id);
     Long countById(long id);

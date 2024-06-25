@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import br.com.nextiacelular.model.EstoqueModel;
-import br.com.nextiacelular.model.ProdutoModel;
 import br.com.nextiacelular.repository.EstoqueRepository;
 import br.com.nextiacelular.util.Mensagem;
 

@@ -5,9 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import br.com.nextiacelular.model.ProdutoModel;
 import br.com.nextiacelular.model.PromocaoModel;
-import br.com.nextiacelular.repository.ProdutoRepository;
 import br.com.nextiacelular.repository.PromocaoRepository;
 import br.com.nextiacelular.util.Mensagem;
 

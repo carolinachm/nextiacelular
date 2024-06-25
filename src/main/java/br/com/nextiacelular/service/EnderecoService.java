@@ -1,12 +1,13 @@
 package br.com.nextiacelular.service;
 
-import br.com.nextiacelular.model.EnderecoModel;
-import br.com.nextiacelular.repository.EnderecoRepository;
-import br.com.nextiacelular.util.Mensagem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import br.com.nextiacelular.model.EnderecoModel;
+import br.com.nextiacelular.repository.EnderecoRepository;
+import br.com.nextiacelular.util.Mensagem;
 
 @Service
 public class EnderecoService {
@@ -53,6 +54,7 @@ public class EnderecoService {
             mensagem.setMensagem("O id informado não existe");
             return new ResponseEntity<>(mensagem, HttpStatus.NOT_FOUND);
         }else{
+            @SuppressWarnings("unused")
             EnderecoModel enderecoModel = enderecoRepository.findById(id).get();
             enderecoRepository.deleteById(id);
             mensagem.setMensagem("Endereço removido com sucesso.");
