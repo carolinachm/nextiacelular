@@ -12,36 +12,37 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.nextiacelular.model.CategoriaModel;
-import br.com.nextiacelular.service.CategoriaService;
+import br.com.nextiacelular.model.EstoqueModel;
+import br.com.nextiacelular.service.EstoqueService;
 
 @RestController
 @RequestMapping("/api")
 @CrossOrigin("*")
-public class CategoriaController {
-
+public class EstoqueController {
 
     @Autowired
-    private CategoriaService categoriaService;
+    private EstoqueService estoqueService;
 
-    @PostMapping("/categoria")
-    public ResponseEntity<?> cadastrar(@RequestBody CategoriaModel categoriaModel){
-        return categoriaService.cadastrar(categoriaModel);
+
+    @PostMapping("/estoque")
+    public ResponseEntity<?> cadastrar(@RequestBody EstoqueModel estoqueModel){
+        return estoqueService.cadastrar(estoqueModel);
     }
-    @GetMapping("/categoria")
+    @GetMapping("/estoque")
     public ResponseEntity<?> listarTodos(){
-        return categoriaService.listarTodas();
+        return estoqueService.listarTodos();
     }
-    @GetMapping("/categoria/{id}")
+    @GetMapping("/estoque/{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable Long id){
-        return categoriaService.buscarPorId(id);
+        return estoqueService.buscarPorId(id);
     }
-    @PutMapping("/categoria")
-    public ResponseEntity<?> alterar(@RequestBody CategoriaModel categoriaModel){
-        return categoriaService.alterar(categoriaModel);
+    @PutMapping("/estoque")
+    public ResponseEntity<?> alterar(@RequestBody EstoqueModel estoqueModel){
+        return estoqueService.atualizar(estoqueModel);
     }
-    @DeleteMapping("/categoria/{id}")
+    @DeleteMapping("/estoque/{id}")
     public ResponseEntity<?> remover(@PathVariable Long id){
-        return categoriaService.remover(id);
+        return estoqueService.remover(id);
     }
+    
 }

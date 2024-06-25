@@ -1,4 +1,4 @@
-package br.com.nextiacelular.nextiacelular;
+package br.com.nextiacelular;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

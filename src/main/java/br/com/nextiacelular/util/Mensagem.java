@@ -1,4 +1,4 @@
-package br.com.nextiacelular.nextiacelular.util;
+package br.com.nextiacelular.util;
 
 import lombok.Getter;
 import lombok.Setter;

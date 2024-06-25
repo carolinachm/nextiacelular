@@ -1,8 +1,8 @@
-package br.com.nextiacelular.nextiacelular.service;
+package br.com.nextiacelular.service;
 
-import br.com.nextiacelular.nextiacelular.model.ClienteModel;
-import br.com.nextiacelular.nextiacelular.repository.ClienteRepository;
-import br.com.nextiacelular.nextiacelular.util.Mensagem;
+import br.com.nextiacelular.model.ClienteModel;
+import br.com.nextiacelular.repository.ClienteRepository;
+import br.com.nextiacelular.util.Mensagem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

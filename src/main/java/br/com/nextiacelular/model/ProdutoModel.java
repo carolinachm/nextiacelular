@@ -1,4 +1,4 @@
-package br.com.nextiacelular.nextiacelular.model;
+package br.com.nextiacelular.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

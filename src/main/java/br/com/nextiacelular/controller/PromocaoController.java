@@ -12,36 +12,35 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.nextiacelular.model.CategoriaModel;
-import br.com.nextiacelular.service.CategoriaService;
+import br.com.nextiacelular.model.PromocaoModel;
+import br.com.nextiacelular.service.PromocaoService;
 
 @RestController
 @RequestMapping("/api")
 @CrossOrigin("*")
-public class CategoriaController {
-
+public class PromocaoController {
 
     @Autowired
-    private CategoriaService categoriaService;
+    private PromocaoService promocaoService;
 
-    @PostMapping("/categoria")
-    public ResponseEntity<?> cadastrar(@RequestBody CategoriaModel categoriaModel){
-        return categoriaService.cadastrar(categoriaModel);
+    @PostMapping("/promocao")
+    public ResponseEntity<?> cadastrar(@RequestBody PromocaoModel promocaoModel){
+        return promocaoService.cadastrar(promocaoModel);
     }
-    @GetMapping("/categoria")
+    @GetMapping("/promocao")
     public ResponseEntity<?> listarTodos(){
-        return categoriaService.listarTodas();
+        return promocaoService.listarTodos();
     }
-    @GetMapping("/categoria/{id}")
+    @GetMapping("/promocao/{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable Long id){
-        return categoriaService.buscarPorId(id);
+        return promocaoService.buscarPorId(id);
     }
-    @PutMapping("/categoria")
-    public ResponseEntity<?> alterar(@RequestBody CategoriaModel categoriaModel){
-        return categoriaService.alterar(categoriaModel);
+    @PutMapping("/promocao")
+    public ResponseEntity<?> atualizar(@RequestBody PromocaoModel promocaoModel){
+        return promocaoService.alterar(promocaoModel);
     }
-    @DeleteMapping("/categoria/{id}")
+    @DeleteMapping("/promocao/{id}")
     public ResponseEntity<?> remover(@PathVariable Long id){
-        return categoriaService.remover(id);
+        return promocaoService.excluir(id);
     }
 }

@@ -1,7 +1,7 @@
-package br.com.nextiacelular.nextiacelular.controller;
+package br.com.nextiacelular.controller;
 
-import br.com.nextiacelular.nextiacelular.model.EnderecoModel;
-import br.com.nextiacelular.nextiacelular.service.EnderecoService;
+import br.com.nextiacelular.model.EnderecoModel;
+import br.com.nextiacelular.service.EnderecoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

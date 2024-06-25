@@ -1,4 +1,4 @@
-package br.com.nextiacelular.nextiacelular.enumerador;
+package br.com.nextiacelular.enumerador;
 
 public enum TipoEndereco {
     CASA,

@@ -1,7 +1,7 @@
-package br.com.nextiacelular.nextiacelular.controller;
+package br.com.nextiacelular.controller;
 
-import br.com.nextiacelular.nextiacelular.model.ProdutoModel;
-import br.com.nextiacelular.nextiacelular.service.ProdutoService;
+import br.com.nextiacelular.model.ProdutoModel;
+import br.com.nextiacelular.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

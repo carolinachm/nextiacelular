@@ -1,6 +1,6 @@
-package br.com.nextiacelular.nextiacelular.model;
+package br.com.nextiacelular.model;
 
-import br.com.nextiacelular.nextiacelular.enumerador.TipoEndereco;
+import br.com.nextiacelular.enumerador.TipoEndereco;
 import jakarta.persistence.*;
 import lombok.Data;
 

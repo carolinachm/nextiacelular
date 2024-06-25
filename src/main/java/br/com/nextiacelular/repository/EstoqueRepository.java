@@ -5,12 +5,12 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.nextiacelular.model.CategoriaModel;
+import br.com.nextiacelular.model.EstoqueModel;
 
 @Repository
-public interface CategoriaRepository extends CrudRepository<CategoriaModel, Long>{
+public interface EstoqueRepository extends CrudRepository<EstoqueModel, Long>{
     
-    List<CategoriaModel> findAll();
-    CategoriaModel findById(long id);
+    List<EstoqueModel> findAll();
+    EstoqueModel findById(long id);
     Long countById(long id);
 }

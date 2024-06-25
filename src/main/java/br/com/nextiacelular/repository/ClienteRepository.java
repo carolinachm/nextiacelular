@@ -1,6 +1,6 @@
-package br.com.nextiacelular.nextiacelular.repository;
+package br.com.nextiacelular.repository;
 
-import br.com.nextiacelular.nextiacelular.model.ClienteModel;
+import br.com.nextiacelular.model.ClienteModel;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

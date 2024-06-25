@@ -1,14 +1,13 @@
-package br.com.nextiacelular.nextiacelular.service;
+package br.com.nextiacelular.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import br.com.nextiacelular.nextiacelular.model.CategoriaModel;
-import br.com.nextiacelular.nextiacelular.model.ClienteModel;
-import br.com.nextiacelular.nextiacelular.repository.CategoriaRepository;
-import br.com.nextiacelular.nextiacelular.util.Mensagem;
+import br.com.nextiacelular.model.CategoriaModel;
+import br.com.nextiacelular.repository.CategoriaRepository;
+import br.com.nextiacelular.util.Mensagem;
 
 @Service
 public class CategoriaService {

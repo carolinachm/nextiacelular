@@ -1,4 +1,4 @@
-package br.com.nextiacelular.nextiacelular;
+package br.com.nextiacelular;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
